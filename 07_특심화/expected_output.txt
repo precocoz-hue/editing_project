@@ -1,0 +1,5 @@
+train / valid / reserved test: 60 20 20
+comparison rows: 3 3 prediction rows: 120 search rows: 10
+classification: KNN_k3 F1=0.545
+regression: Linear RMSE=640.00 ms
+test_used_for_model: False

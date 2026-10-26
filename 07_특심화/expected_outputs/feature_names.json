@@ -1,0 +1,10 @@
+[
+  "num__input_chars",
+  "num__allowed_tools",
+  "cat__task_type_qa",
+  "cat__task_type_research",
+  "cat__task_type_summary",
+  "cat__priority_high",
+  "cat__priority_low",
+  "cat__priority_normal"
+]

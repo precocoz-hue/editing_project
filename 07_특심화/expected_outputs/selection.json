@@ -1,0 +1,12 @@
+{
+  "regression": {
+    "model": "Linear",
+    "metric": "RMSE_ms",
+    "value": 639.9963229941538
+  },
+  "classification": {
+    "model": "KNN_k3",
+    "metric": "F1",
+    "value": 0.5454545454545454
+  }
+}

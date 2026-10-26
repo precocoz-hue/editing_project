@@ -1,0 +1,6 @@
+﻿request_id,split,task,model,y_true,y_pred,residual_ms,probability_failed,error_type
+R087,valid,classification,KNN_k3,0.0,1.0,,0.6666666666666666,FP
+R050,valid,classification,KNN_k3,1.0,0.0,,0.0,FN
+R035,valid,classification,KNN_k3,1.0,0.0,,0.3333333333333333,FN
+R001,valid,classification,KNN_k3,1.0,0.0,,0.0,FN
+R042,valid,classification,KNN_k3,0.0,1.0,,0.6666666666666666,FP

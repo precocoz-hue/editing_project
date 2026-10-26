@@ -1,0 +1,146 @@
+[
+  {
+    "check": "비교표는 문제별 3행",
+    "passed": true
+  },
+  {
+    "check": "원본·분할표·순서표가 실행 시점과 동일",
+    "passed": true
+  },
+  {
+    "check": "test 정책",
+    "passed": true
+  },
+  {
+    "check": "valid 예측은 120행",
+    "passed": true
+  },
+  {
+    "check": "예측 key는 고유",
+    "passed": true
+  },
+  {
+    "check": "test ID 없음",
+    "passed": true
+  },
+  {
+    "check": "test 점수 열 없음",
+    "passed": true
+  },
+  {
+    "check": "regression/Dummy: ID 순서",
+    "passed": true
+  },
+  {
+    "check": "regression/Dummy: 실제값 정렬",
+    "passed": true
+  },
+  {
+    "check": "regression/Dummy: 지표 재계산",
+    "passed": true
+  },
+  {
+    "check": "regression/Dummy: 예측 유한",
+    "passed": true
+  },
+  {
+    "check": "regression/Linear: ID 순서",
+    "passed": true
+  },
+  {
+    "check": "regression/Linear: 실제값 정렬",
+    "passed": true
+  },
+  {
+    "check": "regression/Linear: 지표 재계산",
+    "passed": true
+  },
+  {
+    "check": "regression/Linear: 예측 유한",
+    "passed": true
+  },
+  {
+    "check": "regression/KNN_k15: ID 순서",
+    "passed": true
+  },
+  {
+    "check": "regression/KNN_k15: 실제값 정렬",
+    "passed": true
+  },
+  {
+    "check": "regression/KNN_k15: 지표 재계산",
+    "passed": true
+  },
+  {
+    "check": "regression/KNN_k15: 예측 유한",
+    "passed": true
+  },
+  {
+    "check": "classification/Dummy: ID 순서",
+    "passed": true
+  },
+  {
+    "check": "classification/Dummy: 실제값 정렬",
+    "passed": true
+  },
+  {
+    "check": "classification/Dummy: 지표 재계산",
+    "passed": true
+  },
+  {
+    "check": "classification/Dummy: 예측 유한",
+    "passed": true
+  },
+  {
+    "check": "classification/Logistic: ID 순서",
+    "passed": true
+  },
+  {
+    "check": "classification/Logistic: 실제값 정렬",
+    "passed": true
+  },
+  {
+    "check": "classification/Logistic: 지표 재계산",
+    "passed": true
+  },
+  {
+    "check": "classification/Logistic: 예측 유한",
+    "passed": true
+  },
+  {
+    "check": "classification/KNN_k3: ID 순서",
+    "passed": true
+  },
+  {
+    "check": "classification/KNN_k3: 실제값 정렬",
+    "passed": true
+  },
+  {
+    "check": "classification/KNN_k3: 지표 재계산",
+    "passed": true
+  },
+  {
+    "check": "classification/KNN_k3: 예측 유한",
+    "passed": true
+  },
+  {
+    "check": "전처리 학습은 train만",
+    "passed": true
+  },
+  {
+    "check": "전처리 8열",
+    "passed": true
+  },
+  {
+    "check": "K 탐색은 두 문제·5후보",
+    "passed": true
+  },
+  {
+    "check": "지표 방향에 맞는 선택",
+    "passed": true
+  },
+  {
+    "check": "허용 입력 4열",
+    "passed": true
+  }
+]

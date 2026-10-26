@@ -1,0 +1,11 @@
+﻿task,K,scale,weights,p,metric,train_score,valid_score
+classification,1,standard,uniform,2,F1,1.0,0.4
+classification,3,standard,uniform,2,F1,0.5714285714285714,0.5454545454545454
+classification,5,standard,uniform,2,F1,0.46153846153846156,0.2
+classification,9,standard,uniform,2,F1,0.5185185185185185,0.0
+classification,15,standard,uniform,2,F1,0.36363636363636365,0.0
+regression,1,standard,uniform,2,RMSE_ms,0.0,944.6799458017514
+regression,3,standard,uniform,2,RMSE_ms,443.4225787365065,795.2160572937255
+regression,5,standard,uniform,2,RMSE_ms,480.8255796024168,744.9857649646736
+regression,9,standard,uniform,2,RMSE_ms,533.7788154922531,707.6452409484833
+regression,15,standard,uniform,2,RMSE_ms,561.8455959636096,641.7875780453634

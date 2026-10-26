@@ -1,0 +1,15 @@
+{
+  "source": "Day5 실습 배포 requests.csv 및 split_manifest.csv 원본 재사용",
+  "ppt": "20261026월_머신러닝_회귀_분류_KNN_모델비교_Day6.pptx",
+  "rows": 100,
+  "splits": {
+    "train": 60,
+    "valid": 20,
+    "test": 20
+  },
+  "data_sha256": "d67ff13153a36ef4c06ba739bda9ca1b68154d418a4142c52c688fc7181e9128",
+  "manifest_sha256": "6f16a0aa99ade4c5d3239c7d174ccd559ff7f3ca74c0d192f3ae4d21741abf57",
+  "ordering": "split_order.csv는 Day5 체크포인트와 PPT E05의 분할 내 순서를 보존",
+  "synthetic": true,
+  "test_policy": "ID 무결성 확인 외에 fit/transform/predict/score에 전달하지 않음"
+}

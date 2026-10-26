@@ -1,0 +1,4 @@
+﻿task,model,scale,n_train,n_valid,K,C,weights,p,primary_metric,train_RMSE_ms,MAE_ms,RMSE_ms,R2
+regression,Dummy,standard,60,20,,,not_applicable,,RMSE_ms,594.4222075539686,541.26,658.7450094687625,-0.16174890648401585
+regression,Linear,standard,60,20,,,not_applicable,,RMSE_ms,546.6476582750911,551.7974189024304,639.9963229941538,-0.09656038891780838
+regression,KNN_k15,standard,60,20,15.0,,uniform,2.0,RMSE_ms,561.8455959636096,530.0633333333333,641.7875780453634,-0.10270719959355401
