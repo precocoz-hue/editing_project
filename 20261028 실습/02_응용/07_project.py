@@ -75,3 +75,34 @@ print("오류 사례")
 print(result.loc[result["actual"] != result["predicted"]].head(3).round(3).to_string(index=False))
 print("저장: outputs/test_predictions.csv, test_metrics.json")
 print("08번에서는 이 설정·원본을 그대로 재실행합니다. test를 보고 후보를 다시 고르지 않습니다.")
+
+
+"""
+<< 결과값 >>
+확정 모델: Logistic_FE / 학습80·최종20
+ n  Accuracy  Precision  Recall     F1  ROC_AUC  TN  FP  FN  TP  actual_failed
+20      0.75        0.6     0.5 0.5455   0.7857  12   2   3   3              6
+오류 사례
+request_id  actual  probability_failed  predicted
+      R060       1               0.100          0
+      R017       1               0.379          0
+      R081       0               0.590          1
+저장: outputs/test_predictions.csv, test_metrics.json
+08번에서는 이 설정·원본을 그대로 재실행합니다. test를 보고 후보를 다시 고르지 않습니다.
+======================================================
+
+# 해석
+ROD-AUC=0.786: 0.5 이상으로, 0 or 1 판별 능력이 있는 모델.
+Accuracy=0.75: 20건 중 15건을 맞춤.
+F1=0.545: 20건 중 6건 실패 중 3건만 맞춤. 데이터 균형이 깨진 상황에서도 절반 정도는 잡아냄.
+
+#오류 사례 분석
+- R060: 90% 확률로 성공으로 예측했으나 실제 실패(FN). 예외 사례로, 모델이 학습하지 못한 새로운 유형의 실패가 들어왔을 가능성이 있음.
+- R017: 실제 실패인데 확률이 0.5 임계값보다 낮게 나와서 정상으로 잘못 예측(FN)
+- R081: 실제 정상인데 확률이 0.5 임계값보다 높게 나와서 실패로 잘못 예측(FP)
+
+# 개선점
+- R060, R017: 새로운 유형의 실패를 학습할 수 있도록, 더 많은 학습 자료 확보 필요.
+- 실패(1)를 놓쳤을 시 비용이 오탐(FP)보다 크다면, 임계값을 하향조정하여 실패를 추가로 잡아내어 Recall과 F1을 높이는 전략을 고려할 수 있음. (단, Precision은 낮아질 수 있음)
+
+"""
